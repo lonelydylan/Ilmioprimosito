@@ -1,0 +1,79 @@
+html {
+  background-color: #1d0040;
+
+}
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .socialNetworks li {
+  display: none !important;
+  }
+} 
+
+/* @media (max-width: 900px) {
+  #navLinks li {
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+} */
+
+#navLinks .nav-link {
+  color: #791E94;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: 200;
+}
+
+.navbar {
+  background-color: black;
+  /* background-color: rgb(13,2,33); */
+  border-bottom: 3px #F11D53 solid;
+}
+
+.navbar-brand {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 800;
+  font-style: oblique;
+  font-size: 2rem;
+  padding: 0px;
+
+}
+.navbar-dark .navbar-brand {
+  color: #F11D53;
+}
+.spotify {
+  color: #1db954;
+  height: 20px;
+}
+
+.instagram {
+  color: #5851db;
+}
+
+.soundcloud {
+  color: #ff8800;
+}
+
+.socialNetworks li {
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.socialNetworks li:hover {
+  background-color: rgba(255,255,255,0.8);
+  transition: background-color 1s;
+}
+
+.navbar-nav li {
+  background: black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
