@@ -1,9 +1,11 @@
 html {
-  background-color: #1d0040;
-
 }
+
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  background-color: #1d0040;
+  color:  #F11D53;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -22,19 +24,31 @@ body {
 
 #navLinks .nav-link {
   color: #791E94;
-  font-family: 'Cabin', sans-serif;
+
   font-size: 1.3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 0px;
   padding-bottom: 0px;
-  font-weight: 200;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  width: 130px;
+}
+
+#navLinks .nav-link:hover {
+  color: #ff4395;
+  text-align: center;
+  font-size: 1.55rem;
+  transition: font-size 0.5s;
 }
 
 .navbar {
   background-color: black;
+  height: auto;
   /* background-color: rgb(13,2,33); */
-  border-bottom: 3px #F11D53 solid;
+  border-bottom: 4px #F11D53 solid;
 }
 
 .navbar-brand {
@@ -43,37 +57,74 @@ body {
   font-style: oblique;
   font-size: 2rem;
   padding: 0px;
-
+  transition: font-size 3s;
+  font-size: 2..1rem;
+  transition: font-size 2s;
 }
 .navbar-dark .navbar-brand {
   color: #F11D53;
 }
+
+
 .spotify {
   color: #1db954;
   height: 20px;
 }
-
 .instagram {
   color: #5851db;
 }
-
 .soundcloud {
   color: #ff8800;
 }
-
 .socialNetworks li {
   margin-top: -1px;
   margin-bottom: -1px;
 }
-
 .socialNetworks li:hover {
-  background-color: rgba(255,255,255,0.8);
-  transition: background-color 1s;
+  background-color: rgba(255,255,255,0.2);
+  transition: background-color 0.2s;
 }
 
-.navbar-nav li {
+
+
+.navbar-nav div {
   background: black;
-  padding-top: 0px;
+  padding-top: 10px; /* padding per far coincidere la prima scelta con lo spazio tra i navLink e il bordo magenta */
   padding-bottom: 0px;
-  margin: 0px;
+  margin-top: 0px;
+}
+
+
+.navbar-nav .dropdown-menu {
+  max-height: 0px;
+  max-width: 10px;
+  overflow: hidden;
+  transition: max-height 0.4s;
+}
+.navbar-nav .dropdown-menu.show {
+  max-height: 500px;
+}
+
+.jumbotron {  
+  text-align: center;
+  background-color: #1d0040 ;
+  margin-top: 30px;
+}
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
