@@ -1,9 +1,10 @@
 html {
+  height: 100%;
 }
 
 body {
   font-family: 'Kanit', sans-serif;
-  background-color: #1d0040;
+  background-color: #370c6b; 
   color:  #F11D53;
   height: 100%;
 }
@@ -14,41 +15,49 @@ body {
   }
 } 
 
-/* @media (max-width: 900px) {
-  #navLinks li {
-    padding-left: 50px;
-    padding-right: 50px;
 
-  }
-} */
 
-#navLinks .nav-link {
-  color: #791E94;
+a[aria-expanded=true] .fa-caret-down {
+  display: none;
+}
+a[aria-expanded=false] .fa-caret-up {
+  display: none;
+}
 
-  font-size: 1.3rem;
-  padding-left: 20px;
-  padding-right: 20px;
+#navLinks .nav-link{
+  color: #8915be;
+  font-size: 1rem;
+  letter-spacing: ;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
-  width: 130px;
+  width: 95px;
 }
 
-#navLinks .nav-link:hover {
-  color: #ff4395;
+/* #navLinks .nav-link:hover {
+  color: #FF6C11;
   text-align: center;
-  font-size: 1.55rem;
-  transition: font-size 0.5s;
+  font-size: 1.1rem;
+  transition: font-size 0.2s;
+} */
+#navLinks .barra:hover {
+  color: #FF6C11;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: font-size 0.2s;
 }
 
 .navbar {
   background-color: black;
   height: auto;
-  /* background-color: rgb(13,2,33); */
-  border-bottom: 4px #F11D53 solid;
+  border-bottom: 3px #F11D53 solid;
+  border-top: 3px #F11D53 solid;
+  
 }
 
 .navbar-brand {
@@ -65,10 +74,92 @@ body {
   color: #F11D53;
 }
 
+/* GIF HEADING */
+#vaporImages .container-fluid {
+  background-image: url(https://pngimage.net/wp-content/uploads/2018/06/sunset-transparent-png-.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-top: 100px; */
+  background-position-y: -120px;
+  border-bottom:1px #F11D53 solid;
+  min-height: 150px;
+  width: 100%;
+}
+.row {
+  padding-top: 75px;
+  display: flex;
+  align-items: center;
+}
+.column {
+  background: transparent;
+  flex: 25%;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.row img {
+  min-height: 40%;
+  max-width: 40%;
+    /* max-height: 75%; */
+  background: transparent;
+  padding: 0px;
+  margin: 0px;
+  image-rendering: optimizeQuality;
+}
+#busto {
+  max-width: 33%
+}
+#sadface {
+  max-width: 50%
+}
 
+
+/* IMMAGINI DI BENVENUTO */
+
+#benvenuto .container-fluid{
+  margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-top:1px #F11D53 solid;
+  border-bottom:1px #F11D53 solid;
+}
+#benvenuto .sx {
+  /* border-left:1px #FF6C11 solid; */
+}
+#benvenuto .centrale {
+
+}
+#benvenuto .dx {
+  /* border-right:1px #FF6C11 solid; */
+}
+
+/* TESTO SOTTO IMMAGINI */
+
+#motto {
+  background-image: url(https://www.nicepng.com/png/full/125-1257000_checkered-pattern-png-png-royalty-free-library-purple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#motto .display-4{
+  padding-top: 10px;
+  padding-bottom: 100%s;
+  color: rgb(255, 50, 84);
+  text-shadow: 1px 1px 3px black;
+}
+
+@media (max-width: 768px) {
+  #motto .display-4{
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  }
+} 
+
+
+/* icone */
 .spotify {
   color: #1db954;
-  height: 20px;
 }
 .instagram {
   color: #5851db;
@@ -95,20 +186,35 @@ body {
 }
 
 
-.navbar-nav .dropdown-menu {
-  max-height: 0px;
-  max-width: 10px;
-  overflow: hidden;
+.dropdown .dropdown-menu.show {
+  max-height: 220px;
+  min-width: 0px;
+  font-weight: 300;
   transition: max-height 0.4s;
 }
-.navbar-nav .dropdown-menu.show {
-  max-height: 500px;
+#mainNavbar a.dropdown-item.nav-link.navigazione{
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
 }
 
-.jumbotron {  
-  text-align: center;
-  background-color: #1d0040 ;
-  margin-top: 30px;
+/* EMBED SPOTIFY */
+
+.ascoltami {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  text-shadow: 4px 1px 6px black;
+}
+#profiloSpotify {
+  border: 4px #F11D53 dashed;
+  box-shadow: 5px 1px 6px black;
+}
+.spotifyspan {
+  color: #1db954;
+}
+
 }
 .vertical-center {
   min-height: 100%;
@@ -116,15 +222,24 @@ body {
   display: flex;
   align-items: center;
 }
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #540d6e;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #FF3864;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #d40078;
 }
+
+@media (max-width:768px) {
+  #vaporImages .container-fluid{
+  background-size: cover;
+  background-position-y: -40px;
+  background-position-x: 0px;
+  }
+} 

@@ -14,30 +14,36 @@
 <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-md-2.6 fixed-top">
          <a href="#" class="navbar-brand py-0 pr-2">LONELYD</a>
          <div class="ml-auto">
-           <button class="navbar-toggler" style="border: #F11D53 3px solid;" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-               <i class="fa fa-caret-down p-1 fa-lg" aria-hidden="true" style="color:#F11D53"></i>
+           <button class="navbar-toggler" style="border: #F11D53 3px solid;">
+            <a href="cambiopulsante"  data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation" aria-expanded="false" aria-controls="collasso">
+               <i class="fa fa-caret-down p-1 fa-lg " style="color:#F11D53"></i>
+               <i class="fa fa-caret-up p-1 fa-lg" style="color:#F11D53"></i>
+            </a>
            </button>
          </div>
            <div class="collapse navbar-collapse py-0" id="navLinks">
              <ul class="navbar-nav">
                <li class="nav-item">
-                 <a href="" class="nav-link">HOME</a>
+                 <a href="" class="nav-link barra">HOME</a>
                </li>
                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle justify-content-center m-0 p-0" href="#" id="navbardrop" data-toggle="dropdown">SERVIZI
+                <a class="nav-link dropdown-toggle justify-content-center m-0 p-0 barra" href="#" id="navbardrop" data-toggle="dropdown">SERVIZI
                 </a>
                 <div class="dropdown-menu">
                   <div class="dropdown-divider p-0 m-0" style="border-color:#F11D53; border-width: 3px"></div>
-                  <a class="dropdown-item nav-link p-0" href="#">MIXING</a>
+                  <a class="dropdown-item nav-link p-0 navigazione" href="#">MIXING</a>
                   <div class="dropdown-divider p-0 m-0" style="border-color:#F11D53; border-width: 3px"></div>
-                  <a class="dropdown-item nav-link p-0" href="#">MASTERING</a>
+                  <a class="dropdown-item nav-link p-0 navigazione" href="#">MASTERING</a>
                   <div class="dropdown-divider p-0 m-0" style="border-color:#F11D53; border-width: 3px "></div>
-                  <a class="dropdown-item nav-link p-0" href="#">PRODUZIONE</a>
+                  <a class="dropdown-item nav-link p-0 navigazione" href="#">PRODUZIONE</a>
                   <div class="dropdown-divider p-0 m-0" style="border-color:#F11D53; border-width: 3px"></div>
                 </div>
               </li>
                <li class="nav-item">
-                 <a href="" class="nav-link">PREZZI</a>
+                 <a href="" class="nav-link barra m-0 p-0">PREZZI</a>
+               </li>
+               <li class="nav-item">
+                 <a href="" class="nav-link barra m-0 p-0">CONTATTI</a>
                </li>
              </ul>
            </div>
@@ -50,24 +56,83 @@
               <a class="nav-link px-2" href="http://www.soundcloud.com"><i class="fa fa-soundcloud soundcloud fa-2x"></i>
               </a>
             </li>
-            <li class="nav-item ultimoasinistra"> 
+            <li class="nav-item"> 
               <a class="nav-link px-2" href="http://www.instagram.com/brok.en.hart"><i class="fa fa-instagram instagram fa-2x"></i>
               </a>
             </li>
-
         </ul>
+
+
 </nav>
-  <section>
-    <div class="jumbotron vertical-center">
-      <div class="container d-flex justify-content-center align-items-center float-md-center">
-        <div>
-          <h1 class="display-2">CIAO BRO</h1>
-          <p>insomma ti parlo del mio progetto trap</p>
-        </div>  
-      </div> 
-   </div>
+  <section id="vaporImages">
+    <div id="immagini" class="immagini container-fluid">
+      <div class="row">
+        <div class="column text-center">
+          <img  id="busto" src="https://i.pinimg.com/originals/62/e3/c7/62e3c7dedfd5a241d4a2aceeab224586.gif" alt="Faccia" style="width:40%" >
+        </div>
+        <div class="column text-center">
+          <img src="https://i.ya-webdesign.com/images/vaporwave-vector-skeleton.gif" alt="Faccia" style="width:100%">
+        </div>
+        <div class="column text-center">
+          <img src="https://pa1.narvii.com/6954/d890635bf2e384f7f326ab0d0fd3aaf1cd3c4345r1-500-500_00.gif" alt="Faccia" style="width:100%">
+        </div>
+        <div class="column text-center">
+          <img id="sadface" src="https://i.ya-webdesign.com/images/aesthetic-gif-png-5.gif" alt="Faccia" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+
+
   </section>
-<section>    
+
+    <section id="benvenuto">
+      <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column">
+              <img class="img-fluid sx"src="https://images.unsplash.com/photo-1551288449-085e5252e44e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Snow" style="width:100%">
+            </div>
+            <div class="d-flex flex-column">
+              <img class="img-fluid centrale"src="https://images.unsplash.com/photo-1524578471438-cdd96d68d82c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Snow" style="width:100%">
+            </div>
+            <div class="d-flex flex-column">
+              <img class="img-fluid dx"src="https://images.unsplash.com/photo-1586156938613-769b0353c8fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Snow" style="width:100%">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="motto">
+        <div class="d-flex flex-row justify-content-around align-items-center">
+          <div class="d-flex flex-column">
+            <h1 class="display-4">Pensa.</h1>
+          </div>
+          <div class="d-flex flex-column">
+            <h1 class="display-4">Componi.</h1>
+          </div>
+          <div class="d-flex flex-column">
+            <h1 class="display-4">Ottieni.</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid d-flex d-md-none justify-content-center pt-3">
+        <h1 class="ascoltami">ASCOLTAMI SU <span class="spotifyspan">SPOTIFY</span></h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex d-md-none justify-content-around align-items-center pt-4">
+
+        <iframe id="profiloSpotify" src="https://open.spotify.com/embed/artist/0HnTtmymXrL4MLYOtjy8Y0" width="250" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </section>
+
+
+ 
+<section id="coreScripts">    
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper-utils.js"></script>
