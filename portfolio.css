@@ -9,14 +9,8 @@ body {
   height: 100%;
 }
 
-@media (max-width: 768px) {
-  .socialNetworks li {
-  display: none !important;
-  }
-} 
 
-
-
+/* ICONA DEL MENU A TENDINA PER SCHERMI PICCOLI CHE CAMBIA DIREZIONE QUANDO PREMUTA */
 a[aria-expanded=true] .fa-caret-down {
   display: none;
 }
@@ -24,6 +18,7 @@ a[aria-expanded=false] .fa-caret-up {
   display: none;
 }
 
+/* NAVBAR */
 #navLinks .nav-link{
   color: #8915be;
   font-size: 1rem;
@@ -38,20 +33,14 @@ a[aria-expanded=false] .fa-caret-up {
   line-height: 30px;
   width: 95px;
 }
-
-/* #navLinks .nav-link:hover {
-  color: #FF6C11;
-  text-align: center;
-  font-size: 1.1rem;
-  transition: font-size 0.2s;
-} */
 #navLinks .barra:hover {
-  color: #FF6C11;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ff7a0d;
   text-align: center;
   font-size: 1.1rem;
   transition: font-size 0.2s;
 }
-
 .navbar {
   background-color: black;
   height: auto;
@@ -59,7 +48,6 @@ a[aria-expanded=false] .fa-caret-up {
   border-top: 3px #F11D53 solid;
   
 }
-
 .navbar-brand {
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 800;
@@ -75,7 +63,6 @@ a[aria-expanded=false] .fa-caret-up {
 .navbar-dark .navbar-brand { 
   color: #F11D53;
 }
-
 .navbar-nav div {
   background: black;
   padding-top: 10px; /* padding per far coincidere la prima scelta con lo spazio tra i navLink e il bordo magenta */
@@ -99,7 +86,6 @@ a[aria-expanded=false] .fa-caret-up {
   background-image: url(https://pngimage.net/wp-content/uploads/2018/06/sunset-transparent-png-.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding-top: 100px; */
   background-position-y: -120px;
   border-bottom:1px #F11D53 solid;
   min-height: 150px;
@@ -155,7 +141,6 @@ a[aria-expanded=false] .fa-caret-up {
 }
 
 /* TESTO SOTTO IMMAGINI */
-
 #motto {
   background-image: url(https://www.nicepng.com/png/full/125-1257000_checkered-pattern-png-png-royalty-free-library-purple.png);
   background-size: cover;
@@ -168,16 +153,8 @@ a[aria-expanded=false] .fa-caret-up {
   text-shadow: 1px 1px 3px black;
 }
 
-@media (max-width: 768px) {
-  #motto .display-4{
-  font-size: 1.5rem;
-  text-align: center;
-  align-items: center;
-  }
-} 
 
-
-/* icone */
+/* icone SOCIAL */
 .spotify {
   color: #1db954;
 }
@@ -229,10 +206,26 @@ a[aria-expanded=false] .fa-caret-up {
   background: #d40078;
 }
 
-@media (max-width:768px) {
+/* IF SCHERMI PICCOLI = DIMINUISCI BACKGROUND DELLE GIF */
+@media (max-width:768px) {      
   #vaporImages .container-fluid{
   background-size: cover;
   background-position-y: -40px;
   background-position-x: 0px;
   }
 } 
+ /* DIMINUISCI DIMENSIONE DELLE TRE PAROLE "MOTTO" SOTTO UN DETERMINATO DIMENSIONAMENTO */
+@media (max-width: 768px) {
+  #motto .display-4{
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  }
+} 
+/* SPARISCONO I SOCIAL IN ALTO A DESTRA QUANDO C'E UNO SCHERMO PICCOLO */
+@media (max-width: 768px) {
+  .socialNetworks li {
+  display: none !important;
+  }
+} 
+
