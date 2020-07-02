@@ -66,13 +66,33 @@ a[aria-expanded=false] .fa-caret-up {
   font-style: oblique;
   font-size: 2rem;
   padding: 0px;
-  transition: font-size 3s;
-  font-size: 2..1rem;
-  transition: font-size 2s;
 }
-.navbar-dark .navbar-brand {
+#mainNavbar .navbar-brand:hover { /*contorno quando si va sul logo*/
+  color: black;
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: #F11D53;
+}
+.navbar-dark .navbar-brand { 
   color: #F11D53;
 }
+
+.navbar-nav div {
+  background: black;
+  padding-top: 10px; /* padding per far coincidere la prima scelta con lo spazio tra i navLink e il bordo magenta */
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+.dropdown .dropdown-menu.show { /*mini-animazione di apertura tendina menu*/
+  max-height: 220px;
+  min-width: 0px;
+  font-weight: 300;
+  transition: max-height 0.4s;
+}
+#mainNavbar a.dropdown-item.nav-link.navigazione{ /*E' per regolare la grandezza del testo nella tendina del menu*/
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
 
 /* GIF HEADING */
 #vaporImages .container-fluid {
@@ -178,30 +198,9 @@ a[aria-expanded=false] .fa-caret-up {
 
 
 
-.navbar-nav div {
-  background: black;
-  padding-top: 10px; /* padding per far coincidere la prima scelta con lo spazio tra i navLink e il bordo magenta */
-  padding-bottom: 0px;
-  margin-top: 0px;
-}
-
-
-.dropdown .dropdown-menu.show {
-  max-height: 220px;
-  min-width: 0px;
-  font-weight: 300;
-  transition: max-height 0.4s;
-}
-#mainNavbar a.dropdown-item.nav-link.navigazione{
-
-  font-size: 0.85rem;
-  font-weight: 500;
-
-}
-
 /* EMBED SPOTIFY */
 
-.ascoltami {
+.ascoltami {  /*Scritta schermi piccoli, sopra incorporato di spotify*/
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-size: 2rem;
@@ -211,18 +210,12 @@ a[aria-expanded=false] .fa-caret-up {
   border: 4px #F11D53 dashed;
   box-shadow: 5px 1px 6px black;
 }
-.spotifyspan {
+.spotifyspan {   /*Per colorare di verde la scritta spotify*/
   color: #1db954;
 }
 
-}
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
 
+/* BARRA DI NAVIGAZIONE */
 ::-webkit-scrollbar {
   width: 12px;
 }
